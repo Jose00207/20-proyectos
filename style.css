@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+.modal-continer{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-continer .modal{
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 20px 20px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px grey;
+}
+    
+.modal-continer .modal .content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 20px;
+}   
+
+.modal-continer .modal .content .icon{
+    margin-right: 10px;
+}
+
+.modal-continer .modal .content .message .text{
+    color: #222;
+    font-size: 14px;
+}
+
+.modal-continer .modal .content .message .title{
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.modal-continer .modal .content .message .title h3{
+    margin: 0;
+}
+
+.modal-continer .modal .actions {
+    padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.modal-continer .modal .actions button[class*="btn"] {
+    border: none;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal-continer .modal .actions a[class*="btn"] {
+    border: none;
+    padding: 15px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.modal-continer .modal .actions .btn-confim{
+    background-color: #0684c4;
+    color: white;
+}
+
+.modal-continer .modal .actions .btn-confim:hover{
+    background-color: #056797;
+    color: white;
+}
+
+.modal-continer .modal .actions .btn-cancel{
+    background-color: white;
+    border: solid 1px #ccc !important;
+    color: black;
+}
+
+.modal-continer .modal .actions .btn-cancel:hover{
+    background-color: #eee;
+}
+
+@media screen and (max-width: 600px){
+    .modal-continer .modal{
+        width: 90%;
+        margin-bottom: 100px;
+    }  
+}
