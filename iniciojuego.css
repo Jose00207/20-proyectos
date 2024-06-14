@@ -1,0 +1,36 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.input{
+    position: relative;
+}
+
+.juego {
+    display: grid;
+    height: 60vh;
+    width: 40vh;   
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr );
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.tarjeta{
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+.tarjeta:hover{
+    outline: auto;
+    color: red;
+}
+
+.tarjeta:target{
+    background-color: red;
+}
